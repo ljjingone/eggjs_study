@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "lession",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -7,8 +7,14 @@
     "declarations": true
   },
   "dependencies": {
+    "dayjs": "^1.8.28",
     "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0"
+    "egg-mysql": "^3.0.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.2.2",
+    "egg-validate": "^2.0.2",
+    "egg-view-ejs": "^2.0.1",
+    "mysql2": "^2.1.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -23,8 +29,8 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-demo",
-    "stop": "egg-scripts stop --title=egg-server-demo",
+    "start": "egg-scripts start --daemon --title=egg-server-lession",
+    "stop": "egg-scripts stop --title=egg-server-lession",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
